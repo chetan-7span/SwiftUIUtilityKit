@@ -14,15 +14,15 @@ public struct FontManager {
         guard let fontURL = Bundle.main.url(forResource: fontName, withExtension: fontExtension),
               let fontDataProvider = CGDataProvider(url: fontURL as CFURL),
               let font = CGFont(fontDataProvider) else {
-            print("[SevenSpanFontKit] Failed to load font: \(fontName).\(fontExtension)")
+            print("[SwiftUIUtilityKit] Failed to load font: \(fontName).\(fontExtension)")
             return
         }
 
         var error: Unmanaged<CFError>?
         if !CTFontManagerRegisterGraphicsFont(font, &error) {
-            print("[SevenSpanFontKit] Error registering font: \(String(describing: error?.takeRetainedValue()))")
+            print("[SwiftUIUtilityKit] Error registering font: \(String(describing: error?.takeRetainedValue()))")
         } else {
-            print("[SevenSpanFontKit] Successfully registered: \(fontName)")
+            print("[SwiftUIUtilityKit] Successfully registered: \(fontName)")
         }
     }
 
@@ -30,7 +30,7 @@ public struct FontManager {
         if UIFont(name: name, size: size) != nil {
             return Font.custom(name, size: size)
         } else {
-            print("[SevenSpanFontKit] Warning: Font \(name) not found. Falling back to system font.")
+            print("[SwiftUIUtilityKit] Warning: Font \(name) not found. Falling back to system font.")
             return .system(size: size)
         }
     }
