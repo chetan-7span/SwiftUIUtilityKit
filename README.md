@@ -1,8 +1,15 @@
 # SwiftUIUtilityKit
 
-A Swift package that includes various useful components for iOS development, such as:
+🛠 Installation
+Via Swift Package Manager
+1. Open your Xcode project.
+2. Go to File > Add Packages.
+3. Paste the repository URL: https://github.com/chetan-7span/SwiftUIUtilityKit.git
+4. Select the latest version and add it to your target.
 
-import SwiftUIUtilityKit
+
+
+A Swift package that includes various useful components for iOS development, such as:
 
 - **DeviceManager**: Provides functionality to fetch detailed device information in SwiftUI.
 
