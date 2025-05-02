@@ -114,4 +114,9 @@ A Swift package that includes various useful components for iOS development, suc
 - **UserDefaults Manager**: A simplified and enhanced approach to managing UserDefaults.
   
       UserDefaultsManager.shared.register(key: "userId", defaultValue: 123)
-      print(UserDefaultsManager.shared.get(forKey: "userId"))
+      print(UserDefaultsManager.shared.get(forKey: "userId",defaultValue: 0))
+  or
+
+      if let userId = UserDefaultsManager.shared.get(forKey: "userId") as Int? {
+                print(userId)
+        }
