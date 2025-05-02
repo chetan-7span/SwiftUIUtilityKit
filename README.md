@@ -13,7 +13,7 @@ A Swift package that includes various useful components for iOS development, suc
 
 - **DeviceManager**: Provides functionality to fetch detailed device information in SwiftUI.
 
-      let deviceModel = DeviceManager.shared.modelName
+      let deviceModel = DeviceManager.shared.model
       let systemVersion = DeviceManager.shared.systemVersion
       let screenSize = DeviceManager.shared.screenSize
   
