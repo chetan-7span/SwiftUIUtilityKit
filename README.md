@@ -15,7 +15,7 @@ A Swift package that includes various useful components for iOS development, suc
 
       let deviceModel = DeviceManager.shared.model
       let systemVersion = DeviceManager.shared.systemVersion
-      let screenSize = DeviceManager.shared.screenSize
+      let screenSize = DeviceManager.shared.screenResolution
   
 - **ArrayExtension**:  Add various useful operations to arrays, making them more flexible.
 
